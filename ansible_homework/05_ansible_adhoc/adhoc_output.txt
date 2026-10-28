@@ -1,0 +1,141 @@
+=== Ping Test ===
+localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+
+=== Gather Facts ===
+localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_distribution": "Debian",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Debian",
+        "ansible_distribution_major_version": "13",
+        "ansible_distribution_minor_version": "7",
+        "ansible_distribution_release": "trixie",
+        "ansible_distribution_version": "13.7"
+    },
+    "changed": false
+}
+
+=== File Operations ===
+localhost | CHANGED => {
+    "changed": true,
+    "gid": 1000,
+    "group": "amir",
+    "mode": "0755",
+    "owner": "amir",
+    "path": "/tmp/ansible_test",
+    "size": 40,
+    "state": "directory",
+    "uid": 1000
+}
+localhost | SUCCESS => {
+    "changed": false,
+    "stat": {
+        "atime": 1793183239.3925362,
+        "attr_flags": "",
+        "attributes": [],
+        "block_size": 4096,
+        "blocks": 0,
+        "charset": "binary",
+        "ctime": 1793183239.3925362,
+        "dev": 38,
+        "device_type": 0,
+        "disk_usage_bytes": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 1000,
+        "gr_name": "amir",
+        "inode": 1604,
+        "isblk": false,
+        "ischr": false,
+        "isdir": true,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": false,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "inode/directory",
+        "mode": "0755",
+        "mtime": 1793183239.3925362,
+        "nlink": 2,
+        "path": "/tmp/ansible_test",
+        "pw_name": "amir",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 40,
+        "uid": 1000,
+        "version": null,
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+=== Command Execution ===
+localhost | CHANGED | rc=0 >>
+ 13:57:21 up 1 day, 15:23,  1 user,  load average: 0.46, 0.41, 0.39
+localhost | CHANGED | rc=0 >>
+/home/amir
+amir
+
+=== Copy File ===
+localhost | CHANGED => {
+    "changed": true,
+    "checksum": "31e179f65d8d69e747aa5daf93ad269c1b015ca7",
+    "dest": "/tmp/test_dest.txt",
+    "gid": 1000,
+    "group": "amir",
+    "md5sum": "8f2146fa957421e3eeda907d3aae31d3",
+    "mode": "0664",
+    "owner": "amir",
+    "size": 25,
+    "src": "/home/amir/.ansible/tmp/ansible-tmp-1793183243.5827308-30285-150903886413720/.source.txt",
+    "state": "file",
+    "uid": 1000
+}
+
+=== Get URL ===
+localhost | CHANGED => {
+    "changed": true,
+    "checksum_dest": null,
+    "checksum_src": "0f519248f92e59657a81c5682c1c27b32b5a9c23",
+    "dest": "/tmp/google.html",
+    "elapsed": 0,
+    "gid": 1000,
+    "group": "amir",
+    "md5sum": "24edb2584749406d504ab9793e1511b8",
+    "mode": "0664",
+    "msg": "OK (unknown bytes)",
+    "owner": "amir",
+    "size": 86560,
+    "src": "/home/amir/.ansible/tmp/ansible-tmp-1793183244.9966364-30319-150616812817070/tmptr6r6d1u",
+    "state": "file",
+    "status_code": 200,
+    "uid": 1000,
+    "url": "https://www.google.com"
+}
+
+=== Package Management ===
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[ERROR]: Task failed: Premature end of stream waiting for become success.
+>>> Standard Error
+sudo: a password is required
+Origin: <adhoc 'apt' task>
+
+{'action': 'apt', 'args': {'name': 'curl', 'state': 'present', 'update_cache': 'yes'}, 'timeout': 0, 'async_val': [...]
+
+localhost | FAILED! => {
+    "changed": false,
+    "msg": "Task failed: Premature end of stream waiting for become success.\n>>> Standard Error\nsudo: a password is required"
+}
+Skipped no sudo access
