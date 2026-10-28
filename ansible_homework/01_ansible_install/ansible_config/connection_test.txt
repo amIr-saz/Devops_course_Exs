@@ -1,0 +1,53 @@
+=== Connection Test ===
+[ERROR]: Task failed: Premature end of stream waiting for become success.
+>>> Standard Error
+sudo: a password is required
+Origin: <adhoc 'ping' task>
+
+{'action': 'ping', 'args': {}, 'timeout': 0, 'async_val': 0, 'poll': 15}
+
+localhost | FAILED! => {
+    "changed": false,
+    "msg": "Task failed: Premature end of stream waiting for become success.\n>>> Standard Error\nsudo: a password is required"
+}
+
+=== Inventory List ===
+{
+    "_meta": {
+        "hostvars": {
+            "ansible_python_interpreter=/usr/bin/python3": {
+                "ansible_python_interpreter": "/usr/bin/python3"
+            },
+            "localhost": {
+                "ansible_connection": "local",
+                "ansible_python_interpreter": "/usr/bin/python3"
+            }
+        },
+        "profile": "inventory_legacy"
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "local",
+            "webservers",
+            "dbservers"
+        ]
+    },
+    "local": {
+        "hosts": [
+            "localhost",
+            "ansible_python_interpreter=/usr/bin/python3"
+        ]
+    }
+}
+
+=== All Hosts ===
+  hosts (2):
+    localhost
+    ansible_python_interpreter=/usr/bin/python3
+
+=== Host Variables ===
+{
+    "ansible_connection": "local",
+    "ansible_python_interpreter": "/usr/bin/python3"
+}
