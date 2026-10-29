@@ -1,0 +1,54 @@
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch feature-a
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch feature-b
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch old-feature
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch 
+  branch_demo
+* branch_management
+  feature-a
+  feature-b
+  feature-login
+  main
+  old-feature
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch -D branch_demo 
+Deleted branch branch_demo (was 0d46aec).
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch -D feature-login 
+Deleted branch feature-login (was 71e081b).
+
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch
+* branch_management
+  feature-a
+  feature-b
+  main
+  old-feature
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch -m old-feature new-feature
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch
+* branch_management
+  feature-a
+  feature-b
+  main
+  new-feature
+
+
+
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch -d feature-a 
+Deleted branch feature-a (was 9240cd2).
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git branch -D feature-b
+Deleted branch feature-b (was 9240cd2).
+amir@debian /m/a/N/d/D/g/0/3/branch_management (branch_management)> git switch new-feature 
+D       git_homework/03_branching/3.1/branch_demo/branch_demo/branches.txt
+D       git_homework/03_branching/3.1/branch_demo/branch_demo/log_graph.txt
+D       git_homework/03_branching/3.1/branch_demo/branch_demo/login.js
+D       git_homework/03_branching/3.1/branch_demo/branch_demo/main.txt
+Switched to branch 'new-feature'
