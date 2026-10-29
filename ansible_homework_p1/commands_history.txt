@@ -1,0 +1,72 @@
+cd 01_ansible_install/
+cd ansible_homework/
+cd 05_ansible_adhoc/
+cd 04_ansible_components/
+ansible-doc -F | head -10
+ansible-doc -l
+ansible-galaxy collection uninstall google.cloud
+ansible-galaxy collection list
+cd 03_ansible_concepts/
+cd 02_ansible_basics/
+ansible all -i inventory -m ping
+ansible-inventory -i inventory --host web1
+ansible all -i inventory --hosts
+ansible all -i inventory --list-hosts
+ansible-inventory -i inventory --list-hosts
+ansible-inventory -i inventory --host
+ansible-inventory -i inventory --hosts
+ansible-inventory -i inventory  --list --hosts
+ansible-inventory -i inventory  --list-hosts
+ansible-inventory -i inventory  --host web1
+ansible-inventory -i inventory --list --host web1
+ansible-inventory -i inventory --host --list web1
+ansible-inventory -i inventory --list-host web1
+ansible-inventory -i inventory --hosts web1
+ansible-inventory -i inventory --list --hosts web1
+ansible-inventory -i inventory --yaml --list
+ansible-inventory -i inventory --yaml
+ansible-inventory -i inventory --list
+cat ansible_architecture.txt
+nano ansible_architecture.txt
+nano ansible_complete_explanation.md
+echo "=== which ansible ==="; which ansible
+echo -e "\n=== ansible --version ==="; ansible --version
+echo -e "\n=== ansible-config dump ==="; ansible-config dump | head -30
+echo -e "\n=== ansible package info ==="; pipx runpip ansible show ansible 2>/dev/null || pip3 show ansible
+} > ansible_status.txt
+nano ansible_status.txt
+cd 01_ansible_install
+echo "=== which ansible ==="; which ansible
+echo -e "\n=== ansible --version ==="; ansible --version
+echo -e "\n=== ansible-config dump ==="; ansible-config dump | head -30
+echo -e "\n=== ansible package info ==="; pipx runpip ansible show ansible 2>/dev/null || pip3 show ansible
+} > ansible_status.txt
+cat ansible_status.txt
+cd ansible_config/
+mv ansibl.cfg ansible.cfg
+ls ansible_config/
+mv inventory ansible_config
+nano install_ansible.sh
+ansible --version
+ansible list
+mkdir ansible_config
+pipx runpip ansible show ansible
+pipx runpip ansible show ansible >> ansible_status.txt
+pipx show ansible >> ansible_status.txt
+pip3 show ansible >> ansible_status.txt
+python3 --version >> ansible_status.txt
+ansible-config dump | head -30 >> ansible_status.txt
+ansible --version >> ansible_status.txt
+which ansible >> ansible_status.txt
+pipx install --include-deps ansible --pip-args="--retries 5 --timeout 60"
+pipx install --include-deps ansible --resume-retries
+pipx install --include-deps ansible
+bash install_ansible.sh
+mv install_ansible.sh 01_ansible_install/
+mkdir 05_ansible_adhoc/
+mkdir 04_ansible_components/
+mkdir 03_ansible_concepts/
+mkdir 02_ansible_basics/
+02_ansible_basics/
+mkdir 01_ansible_install/
+mkdir ansible_homework

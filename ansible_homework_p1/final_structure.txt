@@ -1,0 +1,11 @@
+.
+|____ansible_config
+| |____ansible.cfg
+| |____connection_test.txt
+| |____inventory
+|____ansible_status.txt
+|____config_explanation.md
+|____final_structure.txt
+|____installation_notes.md
+|____install_ansible.sh
+|____test_connection.sh
