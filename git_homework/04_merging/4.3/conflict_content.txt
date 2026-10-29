@@ -1,0 +1,23 @@
+
+Before:
+                                                                       
+Line 1
+<<<<<<< HEAD
+Line 2 from A
+=======
+Line 2 from B
+>>>>>>> branch-b
+
+
+After: 
+Line 1
+
+Line 2 from A
+    
+Line 2 from B
+
+
+
+
+حل شد به روش من  :)
+		
