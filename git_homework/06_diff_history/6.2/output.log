@@ -1,0 +1,126 @@
+amir@debian /m/a/N/d/D/g/0/6.2 ((ae80ab82))> git status
+                                             
+HEAD detached at ae80ab8
+nothing to commit, working tree clean
+amir@debian /m/a/N/d/D/g/0/6.2 ((ae80ab82))> git log --oneline
+ae80ab8 (HEAD) Commit 2
+e21d6b4 Commit 1
+0b67e92 (main) tasks on branch diff_demo done
+0455608 Initial commit
+d14a449 all tasks and file on branch stash_demo completed
+e10418a Initial commit
+1faf651 tasks for conflict_demo are done in 4.3
+6e8255c Merge branch-b, resolve conflict
+f228100 Merge branch-b, resolve conflict
+8e53eab Add line from B
+2251dce Add line from A
+6e39ce5 Initial commit
+0f1b7be tasks on branch no_conflict was done in 4.2
+2e6d23d it will be without conflict Merge branch 'branch-b' into no_conflict
+2819fa8 Add file B
+08c95eb Add file A
+160c303 Base commit
+4768ad9 4.1 done and commited
+6381411 Add feature
+3e807dc Initial commit
+f5757df Merge branch 'new-feature' into branch_management
+103a7ab tasks on branch_managment(3.2) was done
+69fcdc0 Add new file
+9240cd2 Initial commit
+ed18b08 now merge the feature-login on main
+71e081b tasks on branch_demo was done  so merged on feature-login
+0d46aec tasks in branch_demo for 3.1 completed
+17c5bbc Add login feature
+03d953c Initial commit on main
+0401389 Initial commit on main
+60ea2c4 02_commit done
+67057b1 Add document and config file
+b5aa230 Add document and config file
+b72aeb2 in branch commit_demo we done taskes
+bbb9f9c Update file1 to version 2
+e8b5b4f Initial commit with three files
+2599b49 01-basic ‌ done
+6eb5ba3 many file directory changed and git_homework structured
+7405ba5 (origin/main, origin/HEAD) 05 structured and files created but commands not tested perfectly
+b7e215f 04 structured and files created but commands not tested perfectly
+5bcd244 03  structured  and almost completed but have an error on show commands
+bd85dc1 01 and 02 completed and commited
+45fb068 Initial commit
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/6.2 ((ae80ab82))> git status
+                                             
+HEAD detached at ae80ab8
+
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/6.2 (time_travel)> git checkout HEAD~1
+Note: switching to 'HEAD~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at ae80ab8 Commit 2
+amir@debian /m/a/N/d/D/g/0/6.2 ((ae80ab82))> git status
+                                             git log --oneline
+HEAD detached at ae80ab8
+nothing to commit, working tree clean
+ae80ab8 (HEAD) Commit 2
+e21d6b4 Commit 1
+0b67e92 (main) tasks on branch diff_demo done
+0455608 Initial commit
+d14a449 all tasks and file on branch stash_demo completed
+e10418a Initial commit
+1faf651 tasks for conflict_demo are done in 4.3
+6e8255c Merge branch-b, resolve conflict
+f228100 Merge branch-b, resolve conflict
+8e53eab Add line from B
+2251dce Add line from A
+6e39ce5 Initial commit
+0f1b7be tasks on branch no_conflict was done in 4.2
+2e6d23d it will be without conflict Merge branch 'branch-b' into no_conflict
+2819fa8 Add file B
+08c95eb Add file A
+160c303 Base commit
+4768ad9 4.1 done and commited
+6381411 Add feature
+3e807dc Initial commit
+f5757df Merge branch 'new-feature' into branch_management
+103a7ab tasks on branch_managment(3.2) was done
+69fcdc0 Add new file
+9240cd2 Initial commit
+ed18b08 now merge the feature-login on main
+71e081b tasks on branch_demo was done  so merged on feature-login
+0d46aec tasks in branch_demo for 3.1 completed
+17c5bbc Add login feature
+03d953c Initial commit on main
+0401389 Initial commit on main
+60ea2c4 02_commit done
+67057b1 Add document and config file
+b5aa230 Add document and config file
+b72aeb2 in branch commit_demo we done taskes
+bbb9f9c Update file1 to version 2
+e8b5b4f Initial commit with three files
+2599b49 01-basic ‌ done
+6eb5ba3 many file directory changed and git_homework structured
+7405ba5 (origin/main, origin/HEAD) 05 structured and files created but commands not tested perfectly
+b7e215f 04 structured and files created but commands not tested perfectly
+5bcd244 03  structured  and almost completed but have an error on show commands
+bd85dc1 01 and 02 completed and commited
+45fb068 Initial commit
