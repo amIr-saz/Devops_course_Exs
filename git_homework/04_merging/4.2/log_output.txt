@@ -1,0 +1,38 @@
+*   2e6d23d it will be without conflict Merge branch 'branch-b' into no_conflict
+|\  
+| * 2819fa8 Add file B
+* | 08c95eb Add file A
+|/  
+* 160c303 Base commit
+* 4768ad9 4.1 done and commited
+* 6381411 Add feature
+* 3e807dc Initial commit
+*   f5757df Merge branch 'new-feature' into branch_management
+|\  
+| * 69fcdc0 Add new file
+* | 103a7ab tasks on branch_managment(3.2) was done
+|/  
+* 9240cd2 Initial commit
+*   ed18b08 now merge the feature-login on main
+|\  
+| *   71e081b tasks on branch_demo was done  so merged on feature-login
+| |\  
+| | * 0d46aec tasks in branch_demo for 3.1 completed
+| * | 17c5bbc Add login feature
+| |/  
+| * 03d953c Initial commit on main
+| * 0401389 Initial commit on main
+| * 60ea2c4 02_commit done
+| * 67057b1 Add document and config file
+* | b5aa230 Add document and config file
+|/  
+* b72aeb2 in branch commit_demo we done taskes
+* bbb9f9c Update file1 to version 2
+* e8b5b4f Initial commit with three files
+* 2599b49 01-basic ‌ done
+* 6eb5ba3 many file directory changed and git_homework structured
+* 7405ba5 05 structured and files created but commands not tested perfectly
+* b7e215f 04 structured and files created but commands not tested perfectly
+* 5bcd244 03  structured  and almost completed but have an error on show commands
+* bd85dc1 01 and 02 completed and commited
+* 45fb068 Initial commit
