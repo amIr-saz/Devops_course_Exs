@@ -6,3 +6,14 @@ amir@debian /m/a/N/d/D/g/0/7.2 (revert_demo)> git log --oneline
 b13f905 Add line 3
 351f094 Add line 2
 a1f11bd Add line 1
+
+
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/7.2 (revert_demo)> git revert HEAD~1
+[revert_demo 675ccf3] Reapply "Add line 3"
+ 1 file changed, 1 insertion(+)
+amir@debian /m/a/N/d/D/g/0/7.2 (revert_demo)> git log --oneline
+675ccf3 (HEAD -> revert_demo) Reapply "Add line 3"
