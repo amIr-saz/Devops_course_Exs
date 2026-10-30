@@ -1,0 +1,18 @@
+amir@debian /m/a/N/d/D/g/0/8/collaboration (main)> git push origin main 
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 1.79 KiB | 609.00 KiB/s, done.
+Total 14 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:amIr-saz/Devops_course_Exs.git
+   61095a0..122f90f  main -> main
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/8/collaboration (collaboration)> git pull origin main
+From github.com:amIr-saz/Devops_course_Exs
+ * branch            main       -> FETCH_HEAD
+Already up to date.
