@@ -1,0 +1,13 @@
+amir@debian /m/a/N/d/D/g/0/8.1 (main)> git branch -vv 
+* main        61095a0 [origin/main] Initial commit
+  revert_demo 48b00a5 tasks on branch revert_demo in 7.2 done
+
+
+
+
+
+
+
+amir@debian /m/a/N/d/D/g/0/8.1 (github_setup.md)> git remote -v
+origin  git@github.com:amIr-saz/Devops_course_Exs.git (fetch)
+origin  git@github.com:amIr-saz/Devops_course_Exs.git (push)
