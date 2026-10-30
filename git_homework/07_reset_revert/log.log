@@ -1,0 +1,29 @@
+amir@debian /m/a/N/d/D/g/07_reset_revert (reset_demo) [128]> git log --oneline 
+6a64ac8 (HEAD -> reset_demo) Commit 3
+d45108a Commit 2
+427b424 Commit 1
+
+
+
+
+amir@debian /m/a/N/d/D/g/07_reset_revert (reset_demo)> git log --oneline
+6a64ac8 (HEAD -> reset_demo) Commit 3
+d45108a Commit 2
+427b424 Commit 1
+
+
+
+amir@debian /m/a/N/d/D/g/07_reset_revert (reset_demo)> git log --oneline
+d45108a (HEAD -> reset_demo) Commit 2
+427b424 Commit 1
+
+
+
+amir@debian /m/a/N/d/D/g/07_reset_revert (reset_demo)> git log --oneline
+427b424 (HEAD -> reset_demo) Commit 1
+
+
+
+
+amir@debian /m/a/N/d/D/g/07_reset_revert (reset_demo)> git log --oneline
+b721a21 (HEAD -> reset_demo, time_travel, main) time_travels done
