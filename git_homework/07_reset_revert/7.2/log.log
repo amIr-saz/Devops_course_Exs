@@ -1,0 +1,8 @@
+amir@debian /m/a/N/d/D/g/0/7.2 (revert_demo)> git revert HEAD
+[revert_demo 6d2499a] Revert "Add line 3"
+ 1 file changed, 1 deletion(-)
+amir@debian /m/a/N/d/D/g/0/7.2 (revert_demo)> git log --oneline
+6d2499a (HEAD -> revert_demo) Revert "Add line 3"
+b13f905 Add line 3
+351f094 Add line 2
+a1f11bd Add line 1
