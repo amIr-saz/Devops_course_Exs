@@ -1,0 +1,266 @@
+nano git_commands_log.txt
+cd git_homework/
+git commit -m "git_homework done"
+git add -A
+git status
+git branch
+git branch -D revert_demo collaboration
+git merge revert_demo
+ls github_demo/
+mv * github_demo/
+mkdir github_demo
+git commit -m "collaboration tasks done "
+git config pull.ff only
+
+git config pull.rebase true
+git config pull.rebase false
+git push origin main
+git merge collaboration
+git switch main
+git commit -m "Merge remote changes but in out structure repo pulls on main in 8.2"
+git pull origin collaboration
+git pull origin main
+git commit -m "Add local file"
+git add local.txt
+git switch -c collaboration
+git commit -m "revert_demo in 8.1 done "
+cat github_setup.md
+nano github_setup.md
+git branch -vv
+git push -u origin main
+git switch revert_demo
+git branch -M main
+git remote -v
+git remote origin
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git remote add origin
+git commit -m "Initial commit"
+git add .
+git switch -c github_setup.md
+cd 08_github/
+git commit -m "tasks on branch revert_demo in 7.2 done"
+git show HEAD
+git log --oneline
+git revert HEAD~1
+git commit -m "7.1 7.2 created"
+git revert HEAD~1
+git log --oneline
+git revert HEAD
+echo "Line 3" >> file.txt
+git add file.txt
+git commit -m "Add line 3"
+echo "Line 2" >> file.txt
+git add file.txt
+git commit -m "Add line 2"
+git commit -m "Add line 1"
+git add file.txt
+git switch -c revert_demo
+git branch -D revert_demo
+git commit -m "Add line 3"
+git commit -m "Add line 2"
+git switch -c  revert_demo
+git branch -D from-detached reset_demo time_travel
+git merge reset_demo
+git commit -m "last commmit in reset_demo"
+git reset --hard HEAD~1
+git reset HEAD~1
+git reset --soft HEAD~1
+git restore file.txt
+nano log.logamir@debian /m/a/N/d/D/g/07_reset_revert (reset_demo) [128]> git log --oneline 
+6a64ac8 (HEAD -> reset_demo) Commit 3
+d45108a Commit 2
+427b424 Commit 1
+
+git log --oneline --head 2
+git log --oneline -h 2
+git restore --staged file.txt
+git commit -m "Commit 3"
+git commit -m "Commit 2"
+git commit -m "Commit 1"
+git switch -c  reset_demo
+git merge time_travel
+git merge
+git commit -m "time_travels done "
+git switch time_travel
+git checkout HEAD~1
+git checkout HEAD^
+git checkout HEAD~2
+git branch from-detached
+git status
+
+git status
+git log --oneline
+git switch -c  time_travel
+git branch -D diff_demo feature
+git merge diff_demo
+git commit -m "tasks on branch diff_demo done "
+git add  -A
+git diff 0455608 3e807dc
+git diff HEAD~1 HEAD
+git diff diff_demo feature -- file1.txt
+git diff diff_demo feature
+git switch diff_demo
+git commit -m "Feature change"
+git add file1.txt
+git switch feature
+git branch feature
+git diff file2.txt
+git diff --staged file1.txt
+git diff --staged file2.txt
+git diff file1.txt
+git add file1.txt file2.txt
+git switch -c diff_demo
+git branch -D branch-a branch-b stash_demo conflict_demo
+git merge stash_demo
+git commit -m "all tasks and file on branch stash_demo completed"
+nano git-stash-show.log
+nano git-stash-list.log
+git stash clear
+git stash drop stash@{0}
+git stash pop
+git stash apply stash@{1}
+git stash apply
+git stash show stash@{1}
+git stash show -p
+git stash show
+git stash list
+git stash push -m "Another WIP"
+git stash
+git stash push -m "WIP: working on feature"
+git add file.txt
+git commit -m "Initial commit"
+git switch -c stash_demo
+git commit -m "tasks for conflict_demo are done in 4.3"
+git commit -m "Merge branch-b, resolve conflict"
+git add
+git add conflict.txt
+git merge branch-b
+git merge branch-a
+git switch conflict_demo
+git commit -m "Add line from B"
+git switch branch-b
+git branch branch-b
+git commit -m "Add line from A"
+git switch branch-a
+git branch branch-a
+git switch -c conflict_demo
+git log
+git commit --amend -m "tasks on branch no_conflict was done in 4.2"
+git show bb653c
+git branch -D branch-a no_conflict branch-b
+git merge no_conflict
+git switchmain
+git branch main
+git commit -m "tasks on branch no_conflict was done"
+git log --oneline --graph --all > log_output.txt
+git switch no_conflict
+git commit -m "Add file B"
+git add file_b.txt
+git branch -D ff_merge
+git commit -m "Add file A"
+git add file_a.txt
+git commit -m "Base commit"
+git add base.txt
+git switch -c no_conflict
+git commit -m "4.1 done and commited"
+git merge feature
+git branch -D feature
+git switch ff_merge
+git log --oneline --graph > log-graph-output
+git log --oneline --graph
+git commit -m "Add feature"
+git add feature.txt
+git add main.txt
+git switch -c ff_merge
+git branch -D branch_management new-feature
+git staus
+cat git-branches.txt
+git merge branch_management
+git merge new-feature
+git switch branch_management
+git switch new-feature
+git commit -m "tasks on branch_managment(3.2) was done "
+nano git-branches.txt
+git commit -m "Add new file"
+git add new.txt
+git branch -D feature-b
+git branch -d feature-a
+git branch -m old-feature new-feature
+git branch -D feature-login
+git branch -D branch_demo
+git branch old-feature
+git branch feature-b
+git branch feature-a
+git switch -c  branch_management
+git merge feature-login
+git merge branch_demo
+git switch feature-login
+git commit -m "tasks in branch_demo for 3.1 completed"
+git log --oneline --graph --all > log_graph.txt
+git branch > branches.txt
+git log --oneline --graph --all
+git switch branch_demo
+git commit -m "Add login feature"
+git add login.js
+git checkout feature-login
+git branch feature-login
+git commit -m "Initial commit on main"
+git switch -c branch_demo
+git switch -b branch_demo
+git heckout HEAD~1
+cd git_homework/03_branching/
+git commit -m "02_commit done"
+nano git commit --amend -m "Initial commit: Add document and config"
+git log --oneline >> befor_after.txt
+git commit --amend -m "Add document and config file"
+git add config.txt
+git commit -m "Add document"
+git add document.txt
+git checkout HEAD
+git checkout HEAD befor-after.txt
+git checkout HEAD befor_after.txt
+git commit --amend -m "Initial commit: Add document and config"
+git log >> befor_after.txt
+git log --help
+git log -h 3
+git log head 3
+git log | -head 3
+git log | head 3
+git log --head 2
+git log -head 2
+git log | less
+git commit --help
+git branch -D commit_demo
+git merge commit_demo
+git merge --help
+git push main
+cd /media/amir/New\ Volume/devops/Devops_course_Exs/git_homework/
+git switch commit_demo
+git log --graph --oneline
+git log --graph
+git merge main
+git commit -m "in branch commit_demo we done taskes"
+git diff --staged
+git diff
+git commit -m "Update file1 to version 2"
+git add file2.txt file3.txt
+git commit -m "Initial commit with three files"
+rm -rf .git/
+git add ../../01_basics/1.2/my_project1/
+git commit -m "01-basic ‌ completly done"
+git add 0
+git branch commit_demo
+git bramch
+git branch -l
+git branch list
+git init
+git commit -m "01-basic ‌ done"
+git sttus
+git statu s
+cd git_homework/01_basics/1.2/my_project/
+mv my_project/ Devops_course_Exs/git_homework/01_basics/1.2/my_project/
+nano git_oneline
+git commit -m "Add application files"
+git add app.js style.css
+git commit -m "Add README file"
+git add README.md
